@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ASIC_MODEL=`sed -n 2p /usr/bin/compile_time`
-release=`curl -f --silent -L --insecure https://raw.githubusercontent.com/minershive/hiveos-asic/master/hive/etc/VERSION`
+release=`curl -f --silent -L --insecure https://raw.githubusercontent.com/phplaboratory/hiveos-asic/master/hive/etc/VERSION`
 exitcode=$?
 version=`cat /hive/etc/VERSION`
 filename=v$release.tar.gz
@@ -30,7 +30,7 @@ if [ $# != "0" ]; then
 		filename=v$release.tar.gz
 	fi
 fi
-url=http://github.com/minershive/hiveos-asic/archive/$filename
+url=http://github.com/phplaboratory/hiveos-asic/archive/$filename
 
 [ -e $filename ] && rm $filename
 
