@@ -127,6 +127,9 @@ elif [ "$ASIC_MODEL" == "Antminer D3" ]; then
 elif [ "$ASIC_MODEL" == "Antminer L3+" ]; then
 	echo "Install Antminer L3+"
 	install_a3_d3
+elif [ "$ASIC_MODEL" == "Antminer L3+ Blissz v1.02" ]; then
+	echo "Install Antminer L3+ Blissz v1.02"
+	install_a3_d3	
 else
 	echo "Not found $ASIC_MODEL"
 	exit 1
